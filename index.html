@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
+    <title>BANK</title>
+</head>
+<body>
+    <div class="logo"><h1>Bank Dev</h1></div>
+        <div class="container">
+            <header>
+                    <img src="/img/pix-106.svg" alt="Logo pix">
+                    <h2>Trasnferência PIX</h2>
+            </header>
+            <form id="form">
+                <label for="valor">Qual é o valor da trasnferência ?
+                <input type="text" name="valor" id="valor" placeholder="R$ 0,00" maxlength="8">
+                <p id="erro1">Insira um valor</p>
+                <p id="erro2">O valor é maior do que o saldo disponivel !.</p>
+                </label>
+                <label for="saldo">Saldo disponível em conta:
+                <input type="text" name="saldofake" class="saldofake" id="saldofake" value="95798.85">
+                <input type="text" name="saldo" class="saldo" id="saldo" placeholder="R$ 95.798,85" disabled>
+                </label>
+                <button type="submit">Tranferir</button>
+                <br>
+                <div id="mensagem-sucesso">
+                </div>
+                <span id="span">✔️</span>
+            </form>
+        </div>
+</body>
+<script src="/script.js"></script>
+</html>
